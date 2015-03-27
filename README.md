@@ -9,7 +9,7 @@ Splunk App to gather insights from your Chef infrastructure via Chef Analytics.
 ## Screenshots:
 
 ### Nodes Activity Dashboard
-![Nodes Activity Dashboard](./appserver/static/nodes-activity.png)
+![Nodes Activity Dashboard](./appserver/static/nodes-graphs.png)
 
 ### Server Activity Dashboard
 ![Server Activity Dashboard](./appserver/static/server-activity.png)
