@@ -8,6 +8,7 @@
         <searchString>index="chef-analytics" message_type=run_converge | chart count over organization_name by status</searchString>
         <earliestTime>0</earliestTime>
         <latestTime/>
+        <option name="charting.seriesColors"> [0xFF0000, 0x00FF00] </option>
         <option name="charting.axisLabelsX.majorLabelStyle.overflowMode">ellipsisNone</option>
         <option name="charting.axisLabelsX.majorLabelStyle.rotation">0</option>
         <option name="charting.axisTitleX.visibility">visible</option>
@@ -36,6 +37,7 @@
         <searchString>index="chef-analytics" message_type=run_converge | chart count by status</searchString>
         <earliestTime>0</earliestTime>
         <latestTime/>
+        <option name="charting.seriesColors"> [0xFF0000, 0x00FF00] </option>
         <option name="charting.axisLabelsX.majorLabelStyle.overflowMode">ellipsisNone</option>
         <option name="charting.axisLabelsX.majorLabelStyle.rotation">0</option>
         <option name="charting.axisTitleX.visibility">visible</option>
@@ -62,6 +64,7 @@
         <searchString>index="chef-analytics" message_type=run_converge | timechart count by status</searchString>
         <earliestTime>-24h@h</earliestTime>
         <latestTime>now</latestTime>
+        <option name="charting.seriesColors"> [0xFF0000, 0x00FF00] </option>
         <option name="charting.axisLabelsX.majorLabelStyle.overflowMode">ellipsisNone</option>
         <option name="charting.axisLabelsX.majorLabelStyle.rotation">0</option>
         <option name="charting.axisTitleX.visibility">visible</option>
