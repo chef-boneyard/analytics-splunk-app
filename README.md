@@ -62,7 +62,7 @@ Splunk App to gather insights from your Chef infrastructure via Chef Analytics.
 
 **NOTE: You must be using Splunk Enterprise to be able to install the Chef Analytics for Splunk App. Splunk Light does not support the installation of Packaged Apps.**
 
-[More information on Splunk supported options can be found here.](http://www.splunk.com/en_us/products/splunk-light/splunk-light-vs-splunk-enterprise.html)
+[More information on differences between Splunk Enterprise and Splunk Light can be found here.](http://www.splunk.com/en_us/products/splunk-light/splunk-light-vs-splunk-enterprise.html)
 
 ## Contributing
 
