@@ -25,6 +25,7 @@ Splunk App to gather insights from your Chef infrastructure via Chef Analytics.
   * Click `+` and select `Splunk`.
   * Give your configuration a name for e.g. `my-splunk-notifier`
   * Configure `hostname`, `port`, `username` & `password` for your Splunk Server.
+  * Port should be `8089`.
 1. Create the necessary rules to send data to your Splunk Server. You will need 3 rules:
   ```
   rules 'splunk-actions'
@@ -58,7 +59,14 @@ Splunk App to gather insights from your Chef infrastructure via Chef Analytics.
     end
   end
   ```
-1. Install Chef Analytics Splunk App in your Splunk Server
+
+  **NOTE: These rules must be inserted verbatim. Any variance from the rules above will result in a non-functioning integration.
+
+1. Install Chef Analytics Splunk App in your Splunk Server [How do I install a Splunk Packaged App?](http://answers.splunk.com/answers/51894/how-to-install-a-splunk-app.html)
+
+**NOTE: You must be using Splunk Enterprise to be able to install the Chef Analytics for Splunk App. Splunk Light does not support the installation of Packaged Apps.**
+
+[More information on differences between Splunk Enterprise and Splunk light can be found here.](http://www.splunk.com/en_us/products/splunk-light/splunk-light-vs-splunk-enterprise.html)
 
 ## Contributing
 
