@@ -25,34 +25,26 @@ Splunk App to gather insights from your Chef infrastructure via Chef Analytics.
   * Port should be `8089`.
 3. Create the necessary rules to send data to your Splunk Server. You will need 3 rules:
   ```
-  rules 'splunk-actions'
+  rules 'Splunk'
     rule on action
     when
       true
     then
-      notify("my-splunk-notifier")
+      notify('my-splunk-notifier')
     end
-  end
-  ```
-
-  ```
-  rules 'splunk-actions'
+  
     rule on run_converge
     when
       true
     then
-      notify("my-splunk-notifier")
+      notify('my-splunk-notifier')
     end
-  end
-  ```
-
-  ```
-  rules 'splunk-run-resources'
+  
     rule on run_resource
     when
       true
     then
-      notify("my-splunk-notifier")
+      notify('my-splunk-notifier')
     end
   end
   ```
