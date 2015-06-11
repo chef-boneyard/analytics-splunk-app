@@ -125,7 +125,7 @@
     <panel>
       <table>
         <title>Common errors</title>
-        <searchString>index="chef-analytics" message_type=run_converge | chart count by error_message | sort - count</searchString>
+        <searchString>index="chef-analytics" message_type=run_converge status="failure" | spath output=error_message "error.description.title" | chart count by error_message | sort - count</searchString>
         <earliestTime>0</earliestTime>
         <latestTime/>
         <option name="wrap">true</option>
