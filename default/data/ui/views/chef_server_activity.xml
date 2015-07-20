@@ -100,7 +100,7 @@
     <panel>
       <table>
         <title>Data bag updates in the last 24 hours</title>
-        <searchString>index="chef-analytics" message_type=action entity_type="bag" | eval data_bag=entity_name | eval account_type = requestor_type | eval account_name = requestor_name | table recorded_at, data_bag,task,account_type,account_name | sort by recorded_at desc</searchString>
+        <searchString>index="chef-analytics" message_type=action parent_type="bag" | eval bag = parent_name | eval item = entity_name | eval who = requestor_name | table recorded_at, bag, item, task, who | sort by recorded_at desc</searchString>
         <earliestTime>-24h@h</earliestTime>
         <latestTime>now</latestTime>
         <option name="wrap">true</option>
